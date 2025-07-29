@@ -1,7 +1,10 @@
 import 'package:face_detection_application/home_screen.dart';
+import 'package:face_detection_application/trials.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await TrialManager.initTrials();
   runApp(MyApp());
 }
 

@@ -53,6 +53,12 @@ class _Home_ScreenState extends State<Home_Screen> {
                 ),
               ),
               onPressed: _pickImage,
+              // onPressed: () async {
+              //   bool canUse = await TrialManager.useTrial(context);
+              //   if (canUse) {
+              //     _pickImage;
+              //   }
+              // },
               child: Text(
                 "Pick an Image",
                 style: TextStyle(color: Colors.white),
@@ -74,6 +80,17 @@ class _Home_ScreenState extends State<Home_Screen> {
                   ),
                 );
               },
+              // onPressed: () async {
+              //   bool canUse = await TrialManager.useTrial(context);
+              //   if (canUse) {
+              //     Navigator.push(
+              //       context,
+              //       MaterialPageRoute(
+              //         builder: (context) => Live_Detection_Screen(),
+              //       ),
+              //     );
+              //   }
+              // },
               child: Text(
                 "Live Camera Detection",
                 style: TextStyle(color: Colors.white),
